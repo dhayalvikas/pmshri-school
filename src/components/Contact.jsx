@@ -46,7 +46,8 @@ export default function Contact() {
                 <h3 className="contact-card-title">School Hours</h3>
                 <p className="contact-card-text">
                   Monday to Saturday<br />
-                  7:00 AM – 1:30 PM<br />
+                  Summer: 7:30 AM – 1:00 PM<br />
+                  Winter: 10:00 AM – 4:00 PM<br />
                   <span className="contact-sub">Closed on Sundays & Public Holidays</span>
                 </p>
               </div>
