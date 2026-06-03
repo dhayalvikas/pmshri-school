@@ -1,0 +1,119 @@
+.activities {
+  padding: 96px 0;
+  background: var(--white);
+}
+
+.activities-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.act-tab {
+  background: var(--gray-50);
+  border: 1.5px solid var(--gray-200);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.act-tab:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.act-tab-tag { pointer-events: none; }
+
+.act-panel {
+  display: none;
+}
+
+.act-panel.visible {
+  display: block;
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.act-panel-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.act-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.act-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s;
+}
+
+.act-img:hover {
+  transform: scale(1.03);
+}
+
+.act-info {
+  padding: 8px 0;
+}
+
+.act-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.act-title {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1.25;
+  margin-bottom: 16px;
+  letter-spacing: -0.2px;
+}
+
+.act-desc {
+  font-size: 15px;
+  color: var(--gray-500);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+@media (max-width: 900px) {
+  .act-panel-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .activities { padding: 64px 0; }
+  .act-images { grid-template-columns: repeat(2, 1fr); }
+}
