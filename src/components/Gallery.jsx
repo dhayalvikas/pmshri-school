@@ -31,6 +31,8 @@ import science1 from '../assets/images/science1.jpeg'
 import science2 from '../assets/images/science2.jpeg'
 import science3 from '../assets/images/science3.jpeg'
 import science4 from '../assets/images/science4.jpeg'
+import balvatika1 from '../assets/images/balvatika1.jpg'
+import balvatika2 from '../assets/images/balvatika2.jpg'
 
 const categories = [
   { id: 'all', label: 'All Photos' },
@@ -41,6 +43,8 @@ const categories = [
   { id: 'eco', label: 'Eco Club' },
   { id: 'green', label: 'Green School' },
   { id: 'learning', label: 'Learning' },
+  { id: 'bal vatika', label: 'Bal Vatika' },
+
 ]
 
 const allImages = [
@@ -74,6 +78,8 @@ const allImages = [
   { src: science2, cat: 'science', label: 'Science & Math Circle' },
   { src: science3, cat: 'science', label: 'Group Experiment' },
   { src: science4, cat: 'science', label: 'Science Exhibition' },
+  { src: balvatika1, cat: 'bal vatika', label: 'Bal Vatika' },
+  { src: balvatika2, cat: 'bal vatika', label: 'Bal Vatika' },
 ]
 
 export default function Gallery() {
